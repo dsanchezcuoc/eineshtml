@@ -1,5 +1,158 @@
+/* --------- RESET --------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
-  height: 100vh;
-  color: #1f1f1f;
-  background: linear-gradient(to bottom, #bada55, #c0ffee);
+  font-family: "Arial", sans-serif;
+  background-color: #f5f7fa;
+  color: #333;
+  line-height: 1.6;
+}
+
+
+/* Enllaços generals */
+a {
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+}
+
+
+
+
+/* --------- HEADER --------- */
+.main-header {
+  text-align: center;
+  padding: 30px 20px;
+  background: #ffffff;
+}
+
+.main-header h1 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 15px;
+  font-size: 2rem;
+  color: #333;
+  justify-content: center;
+}
+
+.main-header .logo {
+  width: 110px;
+  height: auto;
+}
+
+/* --------- NAV --------- */
+nav.nav {
+  background-color: #39aba8;
+  padding: 14px 20px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+nav ul li a {
+  font-weight: bold;
+  padding: 8px 12px;
+  border-radius: 6px;
+}
+
+nav ul li a:hover {
+  background-color: #226765;
+  text-decoration: underline;
+}
+
+/* --------- INTRO --------- */
+.intro {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.intro h2 {
+  font-size: 1.8rem;
+  color: #333;
+}
+
+.intro p {
+  margin-top: 10px;
+  color: #666;
+}
+
+/* --------- CATEGORIES --------- */
+.categories-container {
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 0 20px;
+
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 25px;
+}
+
+.category-card {
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.category-card a {
+  display: block;
+  color: inherit;
+  text-decoration: none;
+}
+
+.category-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.category-card h3 {
+  font-size: 1.3rem;
+  padding: 15px;
+  color: #444;
+}
+
+.category-card p {
+  font-size: 0.95rem;
+  padding: 0 15px 20px;
+  color: #666;
+}
+
+/* --------- FOOTER --------- */
+footer {
+  background-color: #39aba8;
+  padding: 30px 20px;
+  margin-top: 40px;
+}
+
+/* --------- RESPONSIVE --------- */
+@media (max-width: 768px) {
+
+  .main-header h1 {
+    font-size: 1.6rem;
+  }
+
+  .main-header .logo {
+    width: 90px;
+  }
+
+  nav ul {
+    gap: 12px;
+  }
+
+  nav ul li a {
+    padding: 10px;
+    font-size: 0.95rem;
+  }
 }
