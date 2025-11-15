@@ -5,6 +5,9 @@
     <title>Viatjar amb nens - Suïssa</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="estils.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script src="mapa.js"></script>
   </head>
   <body>
     <include src="src/header.html"></include>
@@ -14,11 +17,27 @@
         <p>Idees, destinacions i consells per viatjar en família!</p>
     </section>
 
-    <!-- CATEGORIES -->
-    <section class="categories-container">
+    <!-- CONTINGUTS -->
+    <section class="continguts-container">
+      <img src="images/suissa1.jpeg" alt="Familia de 4 persones al cim nevat">
 
+      <!-- Paràgrafs -->
+      <p>Una de les experiències més inoblidables que pots viure als Alps suïssos és, sense dubte, pujar a l’estació de tren més alta d’Europa: la Jungfraujoch, coneguda també com “Top of Europe”. Situada a 3.454 metres d’altitud, aquesta estació no només és una fita d’enginyeria que es va acabar de construir el 1912, sinó també una porta d’accés a alguns dels paisatges alpins més espectaculars d’Europa. Us expliquem com s’hi arriba, què s’hi pot fer a dalt i alguns consells pràctics per anar-hi en família. </p>
+      <p>Una vegada arribes a l’estació, hi ha un recorregut circular amb diferents propostes. Es pot fer sencer en una hora i mitja- dues hores, per si voleu calcular el temps per la baixada (hi podeu afegir l’estona d’esbarjo que vulgueu). Perquè us en feu una idea, noslatres vam arribar cap a les 10 del matí i cap a les 14h ja baixàvem. A diferència d’altres estacions de tren suïsses, aquí dalt no hi ha hotel i no s’hi pot dormir. </p>
+      <p>Un dels punts més emblemàtics és l’Observatori Sphinx, accessible amb un ascensor d’alta velocitat. Des d’aquesta plataforma exterior es pot contemplar una vista panoràmica de l’Aletschgletscher, el glaciar més llarg d’Europa de 23 quilòmetres de llargada, i dels cims com el Mönch i el Jungfrau. Aquí dalt hi ha un observatori astronòmic. </p>
 
+      <!-- Altres imatges -->
+      <div class="image-gallery">
+        <img src="images/suissa2.jpg" alt="Observatori a dalt del cim nevat">
+        <img src="images/suissa3.jpeg" alt="Un nen i una nena d'esquena a un telefèric veient arbres i muntanyes">
+      </div>
 
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/gYl_i01_j4M?si=rWKKS3LX1d4dOeAr" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+      <div id="map" style="height:400px;"></div>
+      <script>
+        mapa([46.5450, 7.9800]);
+      </script>
     </section>  
     <include src="src/footer.html"></include>
   </body>

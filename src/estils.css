@@ -20,9 +20,6 @@ a {
   font-weight: 500;
 }
 
-
-
-
 /* --------- HEADER --------- */
 .main-header {
   text-align: center;
@@ -84,6 +81,30 @@ nav ul li a:hover {
 .intro p {
   margin-top: 10px;
   color: #666;
+}
+
+/* --------- CONTINUGTS --------- */
+.continguts-container {
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+.continguts-container a {
+  color: #333;
+  text-decoration: underline;
+}
+
+/* Galeria d'altres imatges */
+.image-gallery {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.image-gallery img {
+  width: 50%;
 }
 
 /* --------- CATEGORIES --------- */
