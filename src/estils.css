@@ -20,6 +20,12 @@ a {
   font-weight: 500;
 }
 
+.skip-link {
+  position: absolute;
+  top: -40px;       /* ocult fora de la vista */
+  left: 0;
+}
+
 /* --------- HEADER --------- */
 .main-header {
   text-align: center;
