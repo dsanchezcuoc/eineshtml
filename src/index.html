@@ -5,6 +5,10 @@
     <title>Viatjar amb nens</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="estils.css">
+    <link rel="icon" type="image/png" href="images/favicon/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="images/favicon/favicon.svg" />
+    <link rel="shortcut icon" href="images/favicon/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png" />
   </head>
   <body>
     <include src="src/header.html"></include>
@@ -14,12 +18,40 @@
         <p>Idees, destinacions i consells per viatjar en família!</p>
     </section>
 
+    <img class="img-clip" 
+    srcset="
+      images/malta-index-clip-320.webp 320w,
+      images/malta-index-clip-480.webp 480w,
+      images/malta-index-clip-640.webp 640w,
+      images/malta-index-clip-800.webp 800w,
+      images/malta-index-clip-1200.webp 1200w
+    "
+    sizes="100vw"
+    src="images/andorra-nova1_800.jpg" alt="Andorra">
+
     <!-- CATEGORIES -->
     <section class="categories-container">
-
         <article class="category-card">
           <a href="#">
-            <img src="images/menorca1.jpg" alt="Platja amb nens">
+            <!-- Imatge per densitat de pixel 1X i 2X -->
+            <img
+              srcset="
+                images/menorca1-320.webp 320w,
+                images/menorca1-640.webp 320w,
+                images/menorca1-480.webp 480w,
+                images/menorca1-960.webp 480w,
+                images/menorca1-640.webp 640w,
+                images/menorca1-1280.webp 640w,
+                images/menorca1-800.webp 800w,
+                images/menorca1-1200.webp 1200w
+              "
+              sizes="
+                (max-width: 625px) 100vw,
+                (max-width: 930px) 50vw,
+                33vw
+              "
+              src="images/menorca-nova1_800.jpg" alt="Platja amb nens">
+            <!-- <img src="images/menorca1.jpg?as=webp" type="image/webp" alt="Platja amb nens">-->
             <h3>Menorca</h3>
             <p>Les millors platges per gaudir en família, amb aigües tranquil·les i activitats per a tots.</p>
           </a>
@@ -27,7 +59,21 @@
 
         <article class="category-card">
           <a href="det1.html">
-            <img src="images/suissa1.jpeg" alt="Muntanya i natura">
+              <img
+              srcset="
+                images/suissa1-320.webp 320w,
+                images/suissa1-480.webp 480w,
+                images/suissa1-640.webp 640w,
+                images/suissa1-800.webp 800w,
+                images/suissa1-1200.webp 1200w
+              "
+              sizes="
+                (max-width: 625px) 100vw,
+                (max-width: 930px) 50vw,
+                33vw
+              "
+              src="images/suissa-nova1_800.jpg" alt="Muntanya i natura">
+            <!-- <img src="images/suissa1.jpeg" alt="Muntanya i natura">-->
             <h3>Suïssa</h3>
             <p>Pujar a l’estació de tren del Jungfrau, la més alta d’Europa.</p>
           </a>
@@ -35,7 +81,21 @@
 
         <article class="category-card">
           <a href="det2.html">
-            <img src="images/malta1.jpg" alt="Ciutats amb nens">
+            <img
+              srcset="
+                images/malta1-320.webp 320w,
+                images/malta1-480.webp 480w,
+                images/malta1-640.webp 640w,
+                images/malta1-800.webp 800w,
+                images/malta1-1200.webp 1200w
+              "
+              sizes="
+                (max-width: 625px) 100vw,
+                (max-width: 930px) 50vw,
+                33vw
+              "
+              src="images/malta-nova1_800.jpg" alt="Ciutats amb nens">
+            <!--<img src="images/malta1.jpg" alt="Ciutats amb nens">-->
             <h3>Malta</h3>
             <p>Vuit dies a Malta amb nens i per lliure.</p>
           </a>
@@ -43,7 +103,21 @@
 
         <article class="category-card">
           <a href="#">
-            <img src="images/andorra1.jpg" alt="Andorra">
+            <img
+              srcset="
+                images/andorra1-320.webp 320w,
+                images/andorra1-480.webp 480w,
+                images/andorra1-640.webp 640w,
+                images/andorra1-800.webp 800w,
+                images/andorra1-1200.webp 1200w
+              "
+              sizes="
+                (max-width: 625px) 100vw,
+                (max-width: 930px) 50vw,
+                33vw
+              "
+              src="images/andorra-nova1_800.jpg" alt="Andorra">
+            <!--<img src="images/andorra1.jpg" alt="Andorra">-->
             <h3>Andorra</h3>
             <p>Quan arriba la calor, Andorra és el vostre terreny de joc.</p>
           </a>

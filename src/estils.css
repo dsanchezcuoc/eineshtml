@@ -73,6 +73,16 @@ nav ul li a:hover {
   text-decoration: underline;
 }
 
+/* --------- CLIP INDEX --------- */
+.img-clip {
+  width: 100%;
+  max-width: 1200px;
+  height: auto;
+  display: block;
+  margin: 40px auto;
+  clip-path: polygon( 25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50% );
+}
+
 /* --------- INTRO --------- */
 .intro {
   text-align: center;
@@ -99,6 +109,14 @@ nav ul li a:hover {
 .continguts-container a {
   color: #333;
   text-decoration: underline;
+}
+
+.destacada {
+  width: 100%;
+  max-width: 1200px;
+  height: auto;
+  display: block;
+  margin: 0 auto 30px auto; 
 }
 
 /* Galeria d'altres imatges */
@@ -181,5 +199,13 @@ footer {
   nav ul li a {
     padding: 10px;
     font-size: 0.95rem;
+  }
+}
+@media (max-width: 625px) {
+  .image-gallery {
+    flex-wrap: wrap;
+  } 
+  .image-gallery img {
+    width: 100%;
   }
 }

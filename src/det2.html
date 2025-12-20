@@ -19,8 +19,18 @@
 
     <!-- CONTINGUTS -->
     <section class="continguts-container">
-      <img src="images/malta1.jpg" alt="Vista de la ciutat des del mar">
-
+      <picture>
+        <source  media="(max-width: 625px)" srcset="images/malta-nova1-mobil.webp">
+        <img  class="destacada" srcset="
+                images/malta1-320.webp 320w,
+                images/malta1-480.webp 480w,
+                images/malta1-640.webp 640w,
+                images/malta1-1200.webp 1200w
+              " 
+              src="images/malta-nova1_800.jpg" alt="Ciutats amb nens"
+              alt="Ciutat de Malta">
+      </picture>
+      
       <!-- Paràgrafs -->
       <p>A l’illa de Malta, plena d’història i cultura, ja que per ella van passar grecs, romans, àrabs, espanyols i britànics, es troben un gran nombre de fortificacions, bastions, torres i muralles, així que tot aquest passat monumental conforma un patrimoni complex i divers. Cal destacar les fortaleses de la Valetta, Cospicua, Vittoriosa i Senglea.</p>
       <p>També és interessant visitar, als afores de Birzebbuga, les coves de Ghar Dalam, formen part del Patrimoni de la Humanitat de la UNESCO, al costat dels temples neolítics i altres restes dels primers pobladors de Malta. Però a Malta també es poden trobar petits poblets de pescadors o paratges naturals, com els penya-segats de Dingli, situats a més de 250 metres sobre el nivell del mar, les badies Mellieha i St Paul ‘s.</p>
@@ -28,8 +38,26 @@
 
       <!-- Altres imatges -->
       <div class="image-gallery">
-        <img src="images/malta2.jpg" alt="Carreró empedrat de la ciutat">
-        <img src="images/malta3.jpg" alt="Soldats de guardia i banderes">
+        <img
+          srcset="
+            images/malta2-320.webp 320w,
+            images/malta2-480.webp 480w,
+            images/malta2-640.webp 640w,
+            images/malta2-800.webp 800w,
+            images/malta2-1200.webp 1200w
+          "
+          sizes="(max-width: 625px) 100vw,50vw"
+          src="images/malta-nova1_800.jpg" alt="Observatori a dalt del cim nevat">
+          <img
+          srcset="
+            images/malta3-320.webp 320w,
+            images/malta3-480.webp 480w,
+            images/malta3-640.webp 640w,
+            images/malta3-800.webp 800w,
+            images/malta3-1200.webp 1200w
+          "
+          sizes="(max-width: 625px) 100vw,50vw"
+          src="images/malta-nova1_800.jpg" alt="Observatori a dalt del cim nevat">
       </div>
 
       <iframe width="560" height="315" src="https://www.youtube.com/embed/FSfRzHwsfN8?si=0gk5nC2_vQ0GD-CH" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
