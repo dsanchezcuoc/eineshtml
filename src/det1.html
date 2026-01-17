@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="estils.css">
     <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
-    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
-    <script src="mapa.js"></script>
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js" defer></script>
+    <script src="mapa.js" defer></script>
   </head>
   <body>
     <include src="src/header.html"></include>
@@ -27,8 +27,7 @@
                 images/suissa1-640.webp 640w,
                 images/suissa1-1200.webp 1200w
               " 
-              src="images/suissa-nova1_800.jpg" alt="Ciutats amb nens"
-              alt="Ciutat de Malta">
+              src="images/suissa-nova1_800.jpg" alt="Ciutats amb nens">
       </picture>
 
       <!-- Paràgrafs -->
@@ -60,12 +59,14 @@
           src="images/suissa-nova1_800.jpg" alt="Observatori a dalt del cim nevat" loading="lazy">
       </div>
 
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/gYl_i01_j4M?si=rWKKS3LX1d4dOeAr" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      <iframe loading="lazy" width="560" height="315" src="https://www.youtube.com/embed/gYl_i01_j4M?si=rWKKS3LX1d4dOeAr" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
       <div id="map" style="height:400px;"></div>
+      <!--
       <script>
         mapa([46.5450, 7.9800]);
       </script>
+      -->
     </section>  
     <include src="src/footer.html"></include>
   </body>

@@ -1,3 +1,8 @@
+document.addEventListener('DOMContentLoaded', function () {
+  mapa([35.9375, 14.3754]);
+});
+
+
 function mapa(coord){
 
     var map = L.map('map').setView(coord, 13);
