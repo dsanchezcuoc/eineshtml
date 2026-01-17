@@ -1,7 +1,5 @@
 document.addEventListener('DOMContentLoaded', function () {
-  //mapa([35.9375, 14.3754]);
   const mapEl = document.getElementById('map');
-  //if (!mapEl) return;
 
   const lat = parseFloat(mapEl.dataset.lat);
   const lng = parseFloat(mapEl.dataset.lng);
